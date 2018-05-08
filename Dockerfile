@@ -1,6 +1,12 @@
 FROM openshift3/apb-base
 
 LABEL "com.redhat.apb.spec"=\
+"dmVyc2lvbjogMS4wCm5hbWU6IGhlbGxvLXdvcmxkLWFwYgpkZXNjcmlwdGlvbjogVGhpcyBpcyBh\
+IHNhbXBsZSBhcHBsaWNhdGlvbiBnZW5lcmF0ZWQgYnkgYXBiIGluaXQKYmluZGFibGU6IEZhbHNl\
+CmFzeW5jOiBvcHRpb25hbAptZXRhZGF0YToKICBkaXNwbGF5TmFtZTogaGVsbG8td29ybGQKICBk\
+ZXBlbmRlbmNpZXM6IFtdCnBsYW5zOgogIC0gbmFtZTogZGVmYXVsdAogICAgZGVzY3JpcHRpb246\
+IFRoaXMgZGVmYXVsdCBwbGFuIGRlcGxveXMgaGVsbG8td29ybGQtYXBiCiAgICBmcmVlOiBUcnVl\
+CiAgICBtZXRhZGF0YToge30KICAgIHBhcmFtZXRlcnM6IFtd"
 
 COPY playbooks /opt/apb/actions
 COPY roles /opt/ansible/roles
